@@ -83,10 +83,6 @@ body {
   font-style: italic;
   font-size: 16px;
 }
-#about-me p {
-  width: 80%;
-  font-size: 14px;
-}
 
 /* Gallery sectiont */
 .title {
@@ -253,10 +249,6 @@ input[type="submit"] {
   .about-me__title {
     margin-top: 0;
     margin-bottom: 1em;
-  }
-  #about-me h6,
-  #about-me p {
-    width: 100%;
   }
 }
 
