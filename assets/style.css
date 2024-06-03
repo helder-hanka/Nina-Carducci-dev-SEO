@@ -48,6 +48,7 @@ body {
   background-color: #f6d2b8;
   padding: 100px;
   position: relative;
+  margin: auto;
 }
 
 .picture.left::before {
