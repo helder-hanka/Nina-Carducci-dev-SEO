@@ -1,0 +1,14 @@
+{
+  "name": "nina-carducci-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assets.min.js",
+  "scripts": {
+      "purge": "purgecss --css assets/bootstrap/bootstrap.css --content index.html -o assets/bootstrap/bootstrap.min.purge.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "purgecss": "^6.0.0"
+  }
+}
