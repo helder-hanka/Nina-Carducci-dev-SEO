@@ -4,7 +4,7 @@
   "description": "",
   "main": "assets.min.js",
   "scripts": {
-      "purge": "purgecss --css assets/bootstrap/bootstrap.css --content index.html -o assets/bootstrap/bootstrap.min.purge.css"
+      "purge": "purgecss --css assets/bootstrap/bootstrap.css --content index.html assets/bootstrap/bootstrap.bundle.js -o assets/bootstrap/bootstrap.min.purge.css"
   },
   "author": "",
   "license": "ISC",
