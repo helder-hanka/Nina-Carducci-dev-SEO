@@ -12,4 +12,8 @@ $(document).ready(function() {
         showTags: true,
         tagsPosition: 'top'
     });
+    $('.gallery').on('click', 'ul.tags-bar span.nav-link', function() {
+        $('.gallery ul.tags-bar span.nav-link').removeClass('active');
+        $(this).addClass('active');
+    });
 });

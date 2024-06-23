@@ -1,0 +1,22 @@
+{
+  "name": "nina-carducci-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assets.min.js",
+  "scripts": {
+    "purge": "purgecss --css assets/bootstrap/bootstrap.css --content index.html assets/bootstrap/bootstrap.bundle.js -o assets/bootstrap/bootstrap.min.purge.css",
+    "uglifyjs": "uglifyjs ./assets/bootstrap/bootstrap.bundle.js -o ./assets/bootstrap/bootstrap.bundleTwo.min.js",
+
+     "purgecss": "purgecss --config purgecss.config.js -o ./assets/bootstrap/",
+      "minify-css": "csso ./assets/bootstrap/bootstrap.min.purge.css -o ./assets/bootstrap/bootstrap.min.css",
+      "minify-js": "uglifyjs ./assets/bootstrap/bootstrap.bundle.min.js -o ./assets/bootstrap/bootstrap.bundle.min.js",
+      "build": "npm run purgecss && npm run minify-css && npm run minify-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "csso-cli": "^4.0.2",
+    "purgecss": "^6.0.0",
+    "uglify-js": "^3.18.0"
+  }
+}
